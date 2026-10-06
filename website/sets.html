@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dein Gravia Brett-Set: Kitchen Set, Complete Set oder deine eigene Kombination. Individuelle Gravur auf jedem Brett inklusive.">
+  <title>Brett-Sets mit persönlicher Gravur — GRAVIA</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="sets.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="header"><a class="logo" href="index.html">GRAVIA<span>✳</span></a><nav aria-label="Hauptnavigation"><a href="index.html#produkte">Unsere Produkte</a><a href="sets.html" aria-current="page">Brett-Sets</a></nav><button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button></header>
+<main id="main" class="section sets-page">
+  <div class="sets-heading"><p class="eyebrow">ZUSAMMEN NOCH PERSÖNLICHER</p><h1>Deine Bretter.<br>Dein <em>Set.</em></h1><p>Ein Name, ein Lieblingssatz, ein besonderes Datum: Jedes Brett bekommt seinen eigenen Gravurtext. Die individuelle Gravur ist verpflichtend und im Preis enthalten.</p></div>
+  <section aria-labelledby="preset-heading"><h2 id="preset-heading">Fertig kombiniert. Von dir graviert.</h2><div id="set-presets" class="set-presets"></div></section>
+  <section id="konfigurator" class="set-builder" aria-labelledby="builder-heading">
+    <div><p class="eyebrow">01 · AUSWÄHLEN & PERSONALISIEREN</p><h2 id="builder-heading">Was gehört in dein Set?</h2><p>Wähle jedes Brett höchstens einmal und gib für jedes ausgewählte Brett einen Gravurtext ein.</p><p class="set-hint">Eigene Kombinationen: 1 Brett ohne Rabatt, 2 Bretter mit 5 %, 3 mit 10 %, 4 mit 15 %. Entspricht deine Auswahl einem fertigen Set, gilt automatisch dessen fester Setpreis.</p>
+      <form id="set-design-form"><div id="set-products" class="set-products"></div><label class="set-quantity" for="set-quantity">Anzahl identischer Sets<input id="set-quantity" type="number" min="1" max="1000" step="1" value="1" required></label></form>
+    </div>
+    <aside class="set-summary" aria-labelledby="set-title">
+      <p class="eyebrow">DEINE AUSWAHL</p><h2 id="set-title">Dein Set wartet auf dich.</h2><p id="set-recognition" role="status" aria-live="polite">Wähle zuerst deine Bretter.</p>
+      <ul id="set-selected"></ul>
+      <dl id="set-prices" hidden><div><dt>Zwischensumme pro Set</dt><dd id="set-subtotal"></dd></div><div><dt id="set-discount-label">Rabatt</dt><dd id="set-discount"></dd></div><div class="set-total"><dt>Preis pro Set</dt><dd id="set-total"></dd></div><div><dt id="set-grand-label">Gesamt · 1 Set</dt><dd id="set-grand-total"></dd></div></dl>
+      <p class="set-tax">Alle Preise inkl. 20 % USt. · Gravur je Brett inklusive.</p>
+      <p id="set-engraving-status">Wähle mindestens ein Brett aus.</p>
+      <button type="button" id="set-add" class="button dark" disabled>Set in den Warenkorb ↗</button><a href="#anfrage" class="text-link">Set direkt anfragen ↓</a>
+      <p id="set-status" role="status" aria-live="polite">Set-Auswahl wird geladen …</p><a id="set-cart-link" class="text-link" href="warenkorb.html" hidden>Zum Warenkorb ↗</a>
+    </aside>
+  </section>
+  <section id="anfrage" class="set-inquiry" aria-labelledby="set-inquiry-heading"><div><p class="eyebrow">02 · DEIN SET ANFRAGEN</p><h2 id="set-inquiry-heading">Bereit für deine Unikate?</h2><p>Frage deine Auswahl unverbindlich an. Wir erhalten jedes Brett mit seinem Gravurtext und melden uns per E-Mail. Das Speichern im Warenkorb löst keine Bestellung aus.</p></div>
+    <form id="set-inquiry-form"><div class="form-row"><label>Dein Name<input name="name" minlength="2" maxlength="100" autocomplete="name" required></label><label>Deine E-Mail<input name="email" type="email" maxlength="254" autocomplete="email" required></label></div><label>Weitere Wünsche<textarea name="message" maxlength="2500" rows="3"></textarea></label><div hidden><input name="website" tabindex="-1" autocomplete="off"></div><button id="set-send" class="button dark" disabled>Set unverbindlich anfragen ↗</button><p class="set-hint">Deine Angaben und Gravurtexte werden zur Bearbeitung deiner Anfrage gespeichert und dem GRAVIA-Team übermittelt.</p><p id="set-inquiry-status" role="status" aria-live="polite"></p></form>
+  </section>
+  <noscript>Bitte aktiviere JavaScript, um dein Set auszuwählen und für jedes Brett eine Gravur einzugeben.</noscript>
+</main>
+<footer><a class="logo" href="index.html">GRAVIA<span>✳</span></a><p>Deine Idee. Dein Unikat.</p><address class="footer-contact"><a href="mailto:gravia.at@outlook.com">gravia.at@outlook.com</a><a href="tel:+436643886002">+43 664 3886002</a></address></footer>
+<script src="boards.js"></script><script src="sets-core.js"></script><script src="script.js"></script><script src="shop.js"></script><script src="sets.js"></script>
+</body></html>

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "wood-compact",
+    "name": "Gravia Compact Board",
+    "inquiry": "Personalisiertes Schneidbrett",
+    "width": 220,
+    "height": 150,
+    "thickness": 15,
+    "area": [
+      10,
+      10,
+      200,
+      130
+    ],
+    "confirmed": false,
+    "price_cents": 790,
+    "dimensions_confirmed": true
+  },
+  {
+    "id": "wood-classic",
+    "name": "Gravia Classic Board",
+    "inquiry": "Personalisiertes Schneidbrett",
+    "width": 280,
+    "height": 220,
+    "thickness": 15,
+    "area": [
+      10,
+      10,
+      260,
+      200
+    ],
+    "confirmed": false,
+    "price_cents": 1090,
+    "dimensions_confirmed": true
+  },
+  {
+    "id": "wood-grand",
+    "name": "Gravia Grand Board",
+    "inquiry": "Personalisiertes Schneidbrett",
+    "width": 330,
+    "height": 220,
+    "thickness": 15,
+    "area": [
+      10,
+      10,
+      310,
+      200
+    ],
+    "confirmed": false,
+    "price_cents": 1290,
+    "dimensions_confirmed": true
+  },
+  {
+    "id": "wood-serving",
+    "name": "Gravia Serving Board",
+    "inquiry": "Personalisiertes Schneidbrett",
+    "width": 580,
+    "height": 190,
+    "thickness": 15,
+    "area": [
+      10,
+      10,
+      560,
+      170
+    ],
+    "confirmed": false,
+    "price_cents": 1490,
+    "dimensions_confirmed": true
+  },
+  {
+    "id": "wood",
+    "name": "Gravia Wood One",
+    "inquiry": "Personalisiertes Schneidbrett",
+    "width": 400,
+    "height": 250,
+    "thickness": null,
+    "area": [
+      50,
+      50,
+      300,
+      150
+    ],
+    "confirmed": false,
+    "legacy": true
+  },
+  {
+    "id": "jewelry",
+    "name": "Gravia Mark · Rechteck",
+    "inquiry": "Personalisierter Schmuck",
+    "width": 30,
+    "height": 20,
+    "thickness": null,
+    "area": [
+      2.5,
+      2.5,
+      25,
+      15
+    ],
+    "confirmed": false
+  }
+]

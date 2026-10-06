@@ -1,0 +1,7 @@
+{
+  "presets": [
+    {"id": "set-kitchen", "title": "Gravia Kitchen Set", "products": ["wood-compact", "wood-classic", "wood-grand"], "price": 2890},
+    {"id": "set-complete", "title": "Gravia Complete Set", "products": ["wood-compact", "wood-classic", "wood-grand", "wood-serving"], "price": 4190}
+  ],
+  "discounts": {"1": 0, "2": 5, "3": 10, "4": 15}
+}

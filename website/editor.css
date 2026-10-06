@@ -1,0 +1,46 @@
+.svg-editor { background:#f5f4ef; color:#202b27; }
+.svg-editor .header { position:relative; background:#fff; }
+.svg-editor .header nav { display:flex; gap:20px; }
+.studio { max-width:1700px; margin:auto; padding:42px 28px; }
+.studio-heading { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-bottom:20px; }
+.studio-heading h1 { font-size:clamp(28px,3vw,46px); margin:8px 0; }
+.studio-layout { display:grid; grid-template-columns:260px minmax(300px,1fr) 280px; gap:18px; align-items:start; }
+.studio-panel { background:white; border:1px solid #ddd; border-radius:12px; padding:20px; }
+.studio h2 { font-size:18px; margin:0 0 16px; }
+.studio label { display:block; font-size:13px; margin:12px 0; }
+.studio input:not([type=checkbox]), .studio select, .studio textarea { width:100%; box-sizing:border-box; padding:9px; margin-top:6px; border:1px solid #c8ceca; border-radius:6px; background:white; color:#17251c; font:inherit; }
+.studio input[type=color] { height:38px; padding:3px; }
+.studio input[type=checkbox] { width:auto; }
+.studio button { cursor:pointer; }
+.studio button:disabled { opacity:.4; cursor:not-allowed; }
+.tool-grid,.property-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.tool-grid button,.layers button { border:1px solid #ccd4cd; background:#f7f9f5; color:#213f2c; border-radius:6px; padding:10px 5px; font:inherit; font-size:12px; }
+.tool-grid button[aria-pressed=true],.layers button[aria-pressed=true] { background:#264d39; color:white; }
+.layers { display:grid; gap:6px; max-height:260px; overflow:auto; }
+.layers button { text-align:left; overflow-wrap:anywhere; }
+.canvas-panel { min-width:0; position:sticky; top:20px; }
+#canvas-scroll { height:570px; overflow:auto; display:grid; align-items:center; background-color:#e6e9e3; background-image:radial-gradient(#b8c1b7 1px,transparent 1px); background-size:16px 16px; border-radius:12px; padding:30px; }
+#canvas { display:block; width:100%; min-width:200px; background:white; box-shadow:0 8px 35px #263b2926; touch-action:none; overflow:hidden; }
+#canvas [data-index] { cursor:move; }
+#canvas.drawing { cursor:crosshair; }
+.canvas-panel>p { font-size:12px; margin:12px; }
+.studio fieldset { border:0; padding:0; min-width:0; }
+.studio legend { font-size:13px; }
+.studio-warning { color:#7a4a12; font-size:13px; background:#fff0d8; border-radius:6px; padding:10px; }
+.studio-warning:empty { display:none; }
+.request-panel { display:grid; grid-template-columns:1fr 1fr; gap:60px; background:white; border-radius:12px; padding:36px; margin-top:28px; }
+.studio-hint { font-size:12px; line-height:1.5; color:#66716a; }
+#status { min-height:24px; margin:12px 0; }
+.admin-list { display:grid; gap:16px; }
+.admin-item { padding:24px; background:white; border:1px solid #ddd; border-radius:12px; }
+.admin-item p { white-space:pre-wrap; overflow-wrap:anywhere; margin:10px 0; }
+.admin-item select { max-width:240px; }
+@media(max-width:1100px){.studio-layout{grid-template-columns:220px 1fr}.studio-layout>aside:last-child{grid-column:1/-1}.canvas-panel{position:static}#properties{display:block}.request-panel{gap:24px}}
+@media(max-width:650px){.studio{padding:24px 12px}.studio-heading{align-items:start;flex-direction:column}.studio-layout,.request-panel{grid-template-columns:1fr}.canvas-panel{grid-row:1}#canvas-scroll{height:330px;padding:20px}.request-panel{padding:20px}.svg-editor .header{padding:18px;gap:16px}.svg-editor .header nav{gap:10px;font-size:12px}}
+/* Keep the compact studio navigation visible without the shop's mobile menu. */
+.svg-editor .header nav { position:static; flex-direction:row; padding:0; border:0; background:transparent; flex-wrap:wrap; }
+.studio h1 { letter-spacing:-1.5px; }
+.studio h2 { letter-spacing:-.4px; }
+/* The storefront also has a .studio grid; this page owns its full-width layout. */
+.svg-editor main.studio { display:block; background:transparent; }
+#back-simple { margin-bottom:24px; }
